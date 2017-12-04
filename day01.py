@@ -8,8 +8,8 @@ def day01(digits, step=1):
     return s
 
 def main():
-    with open("day01.txt") as file:
-        digits = file.readline()
+    with open("inputs/day01.txt") as file:
+        digits = file.readline().rstrip()
         result = day01(digits, 1)
         print(result)
         result = day01(digits, len(digits) // 2)
